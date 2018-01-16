@@ -1,0 +1,34 @@
+Partlist
+
+Exported from tableau.sch at 26-Sep-17 4:48 PM
+
+EAGLE Version 7.5.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part        Value                 Device                Package      Library                    Sheet
+
+C1          0.1uF,20V             C-EU025-025X050       C025-025X050 rcl                        3
+C2          0.1uF                 C-EU025-025X050       C025-025X050 resistor                   1
+C3          0.33uF                C-EU025-025X050       C025-025X050 resistor                   1
+D1                                7SEG-CA               7SEG-13      special                    2
+IC1         74LS47N               74LS47N               DIL16        74xx-eu                    2
+IC2         7805TV                7805TV                TO220V       linear                     1
+JP1                               HEADER-1X6            1X06_OVAL    bmp180module               3
+LED1                              LED3MM                LED3MM       led                        1
+LED2                              LED3MM                LED3MM       led                        1
+PIC18F25K80 PIC18F2580-I/SP       PIC18F2580-I/SP       DIL28-3      microchip                  3
+R1                                R-EU_0204/7           0204/7       resistor                   3
+R3                                R-EU_0204/7           0204/7       resistor                   1
+R4                                R-EU_0204/7           0204/7       resistor                   1
+R5          150                   R-EU_0204/7           0204/7       resistor                   2
+R6          150                   R-EU_0204/7           0204/7       resistor                   2
+R7          150                   R-EU_0204/7           0204/7       resistor                   2
+R8          150                   R-EU_0204/7           0204/7       resistor                   2
+R9          150                   R-EU_0204/7           0204/7       resistor                   2
+R10         150                   R-EU_0204/7           0204/7       resistor                   2
+R11         150                   R-EU_0204/7           0204/7       resistor                   2
+R12         150                   R-EU_0204/7           0204/7       resistor                   2
+S1          SWITCH-MOMENTARY-2PTH SWITCH-MOMENTARY-2PTH TACTILE-PTH  SparkFun-Electromechanical 3
+U1          MCP2551               MCP2551               SO08         SparkFun-DigitalIC         3
+X1                                DB9FEMALE             DB9          SparkFun-Connectors        3
