@@ -64,6 +64,9 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -87,16 +90,30 @@
 <layer number="110" name="bBPL" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="MPL" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="11" fill="1" visible="no" active="no"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="sName" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -122,11 +139,21 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -24169,44 +24196,44 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="R11" library="resistor" deviceset="R-EU_" device="0204/7"/>
-<part name="R12" library="resistor" deviceset="R-EU_" device="0204/7"/>
-<part name="R13" library="resistor" deviceset="R-EU_" device="0204/7"/>
-<part name="R14" library="resistor" deviceset="R-EU_" device="0204/7"/>
+<part name="R11" library="resistor" deviceset="R-EU_" device="0204/7" value="14k"/>
+<part name="R12" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
+<part name="R13" library="resistor" deviceset="R-EU_" device="0204/7" value="14k"/>
+<part name="R14" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="Q1" library="transistors" deviceset="2N700*" device="_TO92" technology="0"/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="0204/7"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="0204/7"/>
-<part name="Q2" library="transistors" deviceset="2N700*" device="_TO92" technology="0"/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="0204/7"/>
-<part name="R4" library="resistor" deviceset="R-EU_" device="0204/7"/>
-<part name="Q3" library="transistors" deviceset="2N700*" device="_TO92" technology="0"/>
-<part name="R5" library="resistor" deviceset="R-EU_" device="0204/7"/>
-<part name="R6" library="resistor" deviceset="R-EU_" device="0204/7"/>
-<part name="Q4" library="transistors" deviceset="2N700*" device="_TO92" technology="0"/>
-<part name="R7" library="resistor" deviceset="R-EU_" device="0204/7"/>
-<part name="R8" library="resistor" deviceset="R-EU_" device="0204/7"/>
-<part name="Q5" library="transistors" deviceset="2N700*" device="_TO92" technology="0"/>
-<part name="R9" library="resistor" deviceset="R-EU_" device="0204/7"/>
-<part name="R10" library="resistor" deviceset="R-EU_" device="0204/7"/>
+<part name="Q1" library="transistors" deviceset="2N700*" device="_TO92" technology="0" value="2N7000"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
+<part name="Q2" library="transistors" deviceset="2N700*" device="_TO92" technology="0" value="2N7000"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
+<part name="Q3" library="transistors" deviceset="2N700*" device="_TO92" technology="0" value="2N7000"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
+<part name="Q4" library="transistors" deviceset="2N700*" device="_TO92" technology="0" value="2N7000"/>
+<part name="R7" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
+<part name="R8" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
+<part name="Q5" library="transistors" deviceset="2N700*" device="_TO92" technology="0" value="2N7000"/>
+<part name="R9" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
+<part name="R10" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E7.5-16" package3d_urn="urn:adsk.eagle:package:23382/2" value="1mF"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="microbuilder" deviceset="HEADER-1X6" device=""/>
 <part name="JP3" library="microbuilder" deviceset="HEADER-1X8" device=""/>
 <part name="JP4" library="microbuilder" deviceset="HEADER-1X8" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="F1" library="fuse" deviceset="SH25" device=""/>
+<part name="F1" library="fuse" deviceset="SH25" device="" value="1A"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C4" library="rcl" deviceset="CPOL-EU" device="E2,5-6E"/>
-<part name="R17" library="resistor" deviceset="R-EU_" device="0204/7"/>
-<part name="C5" library="rcl" deviceset="CPOL-EU" device="E2,5-6E"/>
+<part name="C4" library="rcl" deviceset="CPOL-EU" device="E2,5-6E" value="0.33u"/>
+<part name="R17" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
+<part name="C5" library="rcl" deviceset="CPOL-EU" device="E2,5-6E" value="0.33u"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME1" library="microbuilder" deviceset="FRAME_A3" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="025-025X050" value="22nF"/>
 <part name="D1" library="diode" deviceset="ZENER-DIODE" device="DO41Z10" value="ZENER 12V"/>
 <part name="R20" library="resistor" deviceset="R-EU_" device="0309/12" value="0.5"/>
-<part name="R15" library="resistor" deviceset="R-EU_" device="0204/7"/>
+<part name="R15" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
@@ -24775,6 +24802,15 @@ Vulcanix 2017/2018</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,248.683,131.854,JP1,,,,,"/>
+<approved hash="113,1,111.523,81.0539,JP3,,,,,"/>
+<approved hash="113,1,111.523,50.5739,JP4,,,,,"/>
+<approved hash="113,1,160.551,76.731,FRAME1,,,,,"/>
+<approved hash="113,1,243.603,17.5539,JP5,,,,,"/>
+<approved hash="113,1,167.403,-25.6261,JP6,,,,,"/>
+<approved hash="113,1,182.643,-25.6261,JP7,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

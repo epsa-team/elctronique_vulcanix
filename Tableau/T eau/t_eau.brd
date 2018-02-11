@@ -87,9 +87,9 @@
 <wire x1="80" y1="100" x2="70" y2="100" width="0.1524" layer="20"/>
 <wire x1="20" y1="90" x2="20" y2="80" width="0.1524" layer="20"/>
 <wire x1="20" y1="80" x2="10" y2="80" width="0.1524" layer="20"/>
-<hole x="75" y="95" drill="2.6"/>
-<hole x="15" y="85" drill="2.6"/>
-<hole x="35" y="135" drill="2.6"/>
+<hole x="75" y="95" drill="3.2"/>
+<hole x="15" y="85" drill="3.2"/>
+<hole x="35" y="135" drill="3.2"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">

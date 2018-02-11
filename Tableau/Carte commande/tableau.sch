@@ -20046,7 +20046,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="R3" library="resistor" deviceset="R-EU_" device="0204/7"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="0204/7"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="0204/7"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="0204/7" value="10k"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
@@ -20084,7 +20084,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME1" library="bmp180module" deviceset="FRAME_A3" device=""/>
-<part name="C8" library="rcl" deviceset="C-EU" device="025-030X050"/>
 <part name="X9" library="con-molex" deviceset="KK-156-5" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="P+14" library="supply1" deviceset="VCC" device=""/>
@@ -20108,16 +20107,20 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="X6" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="KK-156-11" device=""/>
 <part name="P+12" library="supply1" deviceset="VCC" device=""/>
 <part name="X8" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="KK-156-3" device=""/>
-<part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="KK-156-2" device=""/>
 <part name="X7" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="KK-156-2" device=""/>
-<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="SCHOTTKY-DIODE" device="DO201T15" package3d_urn="urn:adsk.eagle:package:43354/1"/>
-<part name="L1" library="WE-TI" deviceset="WE-TI" device="_8012B" technology="-744743102"/>
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="SCHOTTKY-DIODE" device="DO201T15" package3d_urn="urn:adsk.eagle:package:43354/1" value="1N5822"/>
+<part name="L1" library="WE-TI" deviceset="WE-TI" device="_8012B" technology="-744743102" value="100uH"/>
 <part name="X10" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="KK-156-2" device=""/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="0204/7"/>
 <part name="P+17" library="supply1" deviceset="VCC" device=""/>
 <part name="X11" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="KK-156-2" device=""/>
 <part name="X5" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="KK-156-2" device=""/>
 <part name="R5" library="resistor" deviceset="R-EU_" device="0204/7" value="120"/>
+<part name="R6" library="resistor" deviceset="R-EU_" device="0204/7"/>
+<part name="R7" library="resistor" deviceset="R-EU_" device="0204/7"/>
+<part name="LED3" library="led" deviceset="LED" device="3MM" value="VERT"/>
+<part name="LED4" library="led" deviceset="LED" device="3MM" value="VERT"/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20198,7 +20201,6 @@ Vulcanix 2017/2018</text>
 <instance part="GND5" gate="1" x="-152.4" y="55.88"/>
 <instance part="GND18" gate="1" x="-12.7" y="-78.74" rot="R270"/>
 <instance part="FRAME1" gate="G$1" x="-180.34" y="-106.68"/>
-<instance part="C8" gate="G$1" x="-2.54" y="73.66" rot="R180"/>
 <instance part="X9" gate="-1" x="78.74" y="132.08"/>
 <instance part="X9" gate="-2" x="78.74" y="129.54"/>
 <instance part="X9" gate="-3" x="78.74" y="127"/>
@@ -20259,8 +20261,6 @@ Vulcanix 2017/2018</text>
 <instance part="X8" gate="-1" x="-50.8" y="-33.02"/>
 <instance part="X8" gate="-2" x="-50.8" y="-35.56"/>
 <instance part="X8" gate="-3" x="-50.8" y="-38.1"/>
-<instance part="X2" gate="-1" x="137.16" y="142.24"/>
-<instance part="X2" gate="-2" x="137.16" y="137.16"/>
 <instance part="X7" gate="-1" x="-147.32" y="66.04"/>
 <instance part="X7" gate="-2" x="-147.32" y="60.96"/>
 <instance part="D1" gate="G$1" x="-76.2" y="55.88" rot="R90"/>
@@ -20274,6 +20274,11 @@ Vulcanix 2017/2018</text>
 <instance part="X5" gate="-1" x="33.02" y="-43.18"/>
 <instance part="X5" gate="-2" x="33.02" y="-48.26"/>
 <instance part="R5" gate="G$1" x="-88.9" y="-40.64" rot="R90"/>
+<instance part="R6" gate="G$1" x="-104.14" y="20.32"/>
+<instance part="R7" gate="G$1" x="-104.14" y="10.16"/>
+<instance part="LED3" gate="G$1" x="-93.98" y="20.32" rot="R90"/>
+<instance part="LED4" gate="G$1" x="-93.98" y="10.16" rot="R90"/>
+<instance part="GND17" gate="1" x="-78.74" y="10.16" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -20296,13 +20301,8 @@ Vulcanix 2017/2018</text>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="-15.24" y1="63.5" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="G$1" pin="P$1"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="-15.24" y1="66.04" x2="-15.24" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="71.12" x2="-2.54" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="66.04" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
-<junction x="-15.24" y="66.04"/>
+<wire x1="-15.24" y1="63.5" x2="-15.24" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
@@ -20419,6 +20419,16 @@ Vulcanix 2017/2018</text>
 <pinref part="X8" gate="-2" pin="S"/>
 <wire x1="-60.96" y1="-35.56" x2="-53.34" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<wire x1="-88.9" y1="20.32" x2="-86.36" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="20.32" x2="-86.36" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<wire x1="-86.36" y1="10.16" x2="-88.9" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="10.16" x2="-81.28" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<junction x="-86.36" y="10.16"/>
+</segment>
 </net>
 <net name="CAN_RX" class="0">
 <segment>
@@ -20494,9 +20504,6 @@ Vulcanix 2017/2018</text>
 <wire x1="-15.24" y1="81.28" x2="-17.78" y2="81.28" width="0.1524" layer="91"/>
 <label x="-17.78" y="81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="SW1" gate="G$1" pin="P$2"/>
-<pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="78.74" x2="-2.54" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="81.28" x2="-15.24" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="PIC18F25K80" gate="G$1" pin="RE3/!MCLR/VPP"/>
@@ -21239,7 +21246,20 @@ Vulcanix 2017/2018</text>
 <label x="27.94" y="91.44" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="USB_D+" class="0">
+<net name="LED_2" class="0">
+<segment>
+<pinref part="PIC18F25K80" gate="G$1" pin="RC4/SDI/SDA"/>
+<wire x1="99.06" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="68.58" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
+<label x="101.6" y="60.96" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="-109.22" y1="20.32" x2="-111.76" y2="20.32" width="0.1524" layer="91"/>
+<label x="-111.76" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="LED_1" class="0">
 <segment>
 <pinref part="PIC18F25K80" gate="G$1" pin="RC5/SDO"/>
 <wire x1="99.06" y1="71.12" x2="104.14" y2="71.12" width="0.1524" layer="91"/>
@@ -21248,27 +21268,51 @@ Vulcanix 2017/2018</text>
 <label x="114.3" y="63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X2" gate="-2" pin="S"/>
-<wire x1="134.62" y1="137.16" x2="132.08" y2="137.16" width="0.1524" layer="91"/>
-<label x="132.08" y="137.16" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="-109.22" y1="10.16" x2="-111.76" y2="10.16" width="0.1524" layer="91"/>
+<label x="-111.76" y="10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="USB_D-" class="0">
+<net name="N$38" class="0">
 <segment>
-<pinref part="PIC18F25K80" gate="G$1" pin="RC4/SDI/SDA"/>
-<wire x1="99.06" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="68.58" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
-<label x="101.6" y="60.96" size="1.778" layer="95" xref="yes"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="-99.06" y1="20.32" x2="-96.52" y2="20.32" width="0.1524" layer="91"/>
 </segment>
+</net>
+<net name="N$39" class="0">
 <segment>
-<pinref part="X2" gate="-1" pin="S"/>
-<wire x1="134.62" y1="142.24" x2="132.08" y2="142.24" width="0.1524" layer="91"/>
-<label x="132.08" y="142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="-99.06" y1="10.16" x2="-96.52" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,48.26,83.82,PIC18F25K80,VSS,GND,,,"/>
+<approved hash="104,1,99.06,78.74,PIC18F25K80,VSS,GND,,,"/>
+<approved hash="104,1,99.06,81.28,PIC18F25K80,VDD,VCC,,,"/>
+<approved hash="104,1,-142.24,-25.4,U$1,VDD,VCC,,,"/>
+<approved hash="104,1,-142.24,-38.1,U$1,VSS,GND,,,"/>
+<approved hash="104,1,-93.98,106.68,IC5,V+,VCC,,,"/>
+<approved hash="104,1,-114.3,106.68,IC5,V-,GND,,,"/>
+<approved hash="104,1,-109.22,66.04,IC6,VIN,VBATTERY,,,"/>
+<approved hash="113,1,-16.9926,73.66,SW1,,,,,"/>
+<approved hash="113,1,13.231,23.391,FRAME1,,,,,"/>
+<approved hash="113,1,79.0531,132.08,X9,,,,,"/>
+<approved hash="113,1,33.3331,33.02,X1,,,,,"/>
+<approved hash="113,1,33.3331,-7.62,X3,,,,,"/>
+<approved hash="113,1,30.7931,-68.58,X4,,,,,"/>
+<approved hash="113,1,-78.4269,137.16,X6,,,,,"/>
+<approved hash="113,1,-50.4869,-33.02,X8,,,,,"/>
+<approved hash="113,1,137.473,142.24,X2,,,,,"/>
+<approved hash="113,1,-147.007,66.04,X7,,,,,"/>
+<approved hash="113,1,138.067,124.46,X10,,,,,"/>
+<approved hash="113,1,33.9267,129.54,X11,,,,,"/>
+<approved hash="113,1,33.3331,-43.18,X5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

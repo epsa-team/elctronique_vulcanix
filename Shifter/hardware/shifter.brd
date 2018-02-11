@@ -64,6 +64,9 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -87,16 +90,30 @@
 <layer number="110" name="bBPL" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="MPL" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="11" fill="1" visible="no" active="no"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="sName" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -122,11 +139,21 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -138,9 +165,8 @@
 <wire x1="24.13" y1="17.78" x2="120.65" y2="17.78" width="0.4064" layer="20"/>
 <wire x1="120.65" y1="17.78" x2="120.65" y2="71.12" width="0.4064" layer="20"/>
 <wire x1="120.65" y1="71.12" x2="24.13" y2="71.12" width="0.4064" layer="20"/>
-<dimension x1="90.424" y1="71.12" x2="24.13" y2="71.12" x3="57.277" y3="77.216" textsize="1.778" layer="20"/>
-<dimension x1="24.13" y1="71.12" x2="24.13" y2="17.78" x3="11.43" y3="44.45" textsize="1.778" layer="20"/>
-<dimension x1="19.304" y1="42.926" x2="24.13" y2="42.672" x3="21.717" y3="34.29" textsize="1.778" layer="20" dtype="horizontal"/>
+<text x="24.892" y="19.304" size="1.778" layer="25">Shifter
+Vulcanix - EPSA 2017/2018</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -4090,41 +4116,41 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="E7,5-16" package3d_urn="urn:adsk.eagle:package:23382/2" value="1mF" x="102.87" y="31.496" rot="R270"/>
-<element name="Q1" library="transistors" package="TO-92" value="" x="83.566" y="57.404" rot="R270"/>
-<element name="Q2" library="transistors" package="TO-92" value="" x="69.85" y="56.896" rot="R270"/>
-<element name="Q3" library="transistors" package="TO-92" value="" x="95.758" y="58.674" rot="R270"/>
-<element name="Q4" library="transistors" package="TO-92" value="" x="56.896" y="57.658" rot="R270"/>
-<element name="Q5" library="transistors" package="TO-92" value="" x="42.926" y="57.404" rot="R270"/>
-<element name="R1" library="resistor" package="0204/7" value="" x="88.392" y="57.658" rot="R270"/>
-<element name="R10" library="resistor" package="0204/7" value="" x="42.164" y="52.324"/>
-<element name="R11" library="resistor" package="0204/7" value="" x="71.374" y="46.99"/>
-<element name="R12" library="resistor" package="0204/7" value="" x="59.182" y="46.99"/>
-<element name="R13" library="resistor" package="0204/7" value="" x="71.374" y="43.18"/>
-<element name="R14" library="resistor" package="0204/7" value="" x="59.182" y="43.18"/>
-<element name="R2" library="resistor" package="0204/7" value="" x="84.074" y="51.816"/>
-<element name="R3" library="resistor" package="0204/7" value="" x="74.676" y="58.166" rot="R270"/>
-<element name="R4" library="resistor" package="0204/7" value="" x="70.104" y="52.324"/>
-<element name="R5" library="resistor" package="0204/7" value="" x="100.584" y="59.182" rot="R270"/>
-<element name="R6" library="resistor" package="0204/7" value="" x="96.774" y="52.832"/>
-<element name="R7" library="resistor" package="0204/7" value="" x="62.23" y="58.42" rot="R270"/>
-<element name="R8" library="resistor" package="0204/7" value="" x="57.912" y="52.578"/>
-<element name="R9" library="resistor" package="0204/7" value="" x="48.26" y="56.642" rot="R270"/>
+<element name="Q1" library="transistors" package="TO-92" value="2N7000" x="83.566" y="57.404" rot="R270"/>
+<element name="Q2" library="transistors" package="TO-92" value="2N7000" x="69.85" y="56.896" rot="R270"/>
+<element name="Q3" library="transistors" package="TO-92" value="2N7000" x="95.758" y="58.674" rot="R270"/>
+<element name="Q4" library="transistors" package="TO-92" value="2N7000" x="56.896" y="57.658" rot="R270"/>
+<element name="Q5" library="transistors" package="TO-92" value="2N7000" x="42.926" y="57.404" rot="R270"/>
+<element name="R1" library="resistor" package="0204/7" value="10k" x="88.392" y="57.658" rot="R270"/>
+<element name="R10" library="resistor" package="0204/7" value="10k" x="42.164" y="52.324"/>
+<element name="R11" library="resistor" package="0204/7" value="14k" x="71.374" y="46.99"/>
+<element name="R12" library="resistor" package="0204/7" value="10k" x="59.182" y="46.99"/>
+<element name="R13" library="resistor" package="0204/7" value="14k" x="71.374" y="43.18"/>
+<element name="R14" library="resistor" package="0204/7" value="10k" x="59.182" y="43.18"/>
+<element name="R2" library="resistor" package="0204/7" value="10k" x="84.074" y="51.816"/>
+<element name="R3" library="resistor" package="0204/7" value="10k" x="74.676" y="58.166" rot="R270"/>
+<element name="R4" library="resistor" package="0204/7" value="10k" x="70.104" y="52.324"/>
+<element name="R5" library="resistor" package="0204/7" value="10k" x="100.584" y="59.182" rot="R270"/>
+<element name="R6" library="resistor" package="0204/7" value="10k" x="96.774" y="52.832"/>
+<element name="R7" library="resistor" package="0204/7" value="10k" x="62.23" y="58.42" rot="R270"/>
+<element name="R8" library="resistor" package="0204/7" value="10k" x="57.912" y="52.578"/>
+<element name="R9" library="resistor" package="0204/7" value="10k" x="48.26" y="56.642" rot="R270"/>
 <element name="JP1" library="microbuilder" package="1X06_OVAL" value="" x="63.5" y="20.32"/>
 <element name="JP3" library="microbuilder" package="1X08_OVAL" value="" x="78.74" y="68.58"/>
-<element name="JP4" library="microbuilder" package="1X08_OVAL" value="" x="57.15" y="68.58"/>
-<element name="F1" library="fuse" package="SH25" value="" x="65.278" y="33.528">
+<element name="JP4" library="microbuilder" package="1X08_OVAL" value="" x="56.896" y="68.58"/>
+<element name="F1" library="fuse" package="SH25" value="1A" x="65.278" y="33.528">
 <attribute name="MF" value="SCHURTER" x="65.278" y="33.528" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="0031.8211" x="65.278" y="33.528" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1162741" x="65.278" y="33.528" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="96B9380" x="65.278" y="33.528" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C4" library="rcl" package="E2,5-6E" value="" x="47.498" y="40.894" rot="R90"/>
-<element name="R17" library="resistor" package="0204/7" value="" x="40.386" y="28.702" rot="R90"/>
-<element name="C5" library="rcl" package="E2,5-6E" value="" x="45.212" y="28.194" rot="R90"/>
+<element name="C4" library="rcl" package="E2,5-6E" value="0.33u" x="47.498" y="40.894" rot="R90"/>
+<element name="R17" library="resistor" package="0204/7" value="10k" x="40.386" y="28.702" rot="R90"/>
+<element name="C5" library="rcl" package="E2,5-6E" value="0.33u" x="45.212" y="28.194" rot="R90"/>
 <element name="C2" library="rcl" package="C025-025X050" value="22nF" x="91.44" y="32.258" rot="R270"/>
 <element name="D1" library="diode" package="DO41Z10" value="ZENER 12V" x="85.09" y="43.688"/>
 <element name="R20" library="resistor" package="0309/12" value="0.5" x="85.09" y="32.258" rot="R90"/>
-<element name="R15" library="resistor" package="0204/7" value="" x="40.894" y="40.132" rot="R90"/>
+<element name="R15" library="resistor" package="0204/7" value="10k" x="40.894" y="40.132" rot="R90"/>
 <element name="J1" library="EP_molex_6410_7395" package="7395-07" value="22-05-7078-07" x="112.776" y="45.72" rot="R270"/>
 <element name="J2" library="EP_molex_6410_7395" package="7395-03" value="22-05-7038-03" x="33.02" y="52.07" rot="R90"/>
 <element name="J3" library="EP_molex_6410_7395" package="7395-02" value="22-05-7028-02" x="33.02" y="58.674" rot="R90"/>
@@ -4209,7 +4235,7 @@ design rules under a new name.</description>
 <wire x1="65.024" y1="53.34" x2="64.008" y2="52.324" width="0.4064" layer="16"/>
 <via x="64.008" y="52.324" extent="1-16" drill="0.35" shape="octagon"/>
 <wire x1="64.008" y1="52.324" x2="64.008" y2="46.99" width="0.4064" layer="1"/>
-<wire x1="63.5" y1="68.58" x2="64.008" y2="68.072" width="0.4064" layer="16"/>
+<wire x1="63.246" y1="68.58" x2="64.008" y2="68.072" width="0.4064" layer="16"/>
 <wire x1="64.008" y1="68.072" x2="64.008" y2="57.912" width="0.4064" layer="16"/>
 <wire x1="64.008" y1="57.912" x2="65.024" y2="56.896" width="0.4064" layer="16"/>
 <wire x1="65.024" y1="56.896" x2="65.024" y2="53.34" width="0.4064" layer="16"/>
@@ -4219,7 +4245,7 @@ design rules under a new name.</description>
 <contactref element="R13" pad="1"/>
 <contactref element="JP4" pad="5"/>
 <wire x1="62.992" y1="43.18" x2="67.564" y2="43.18" width="0.4064" layer="1"/>
-<wire x1="58.42" y1="68.58" x2="58.42" y2="64.516" width="0.4064" layer="16"/>
+<wire x1="58.166" y1="68.58" x2="58.42" y2="64.516" width="0.4064" layer="16"/>
 <wire x1="58.42" y1="64.516" x2="52.578" y2="58.674" width="0.4064" layer="16"/>
 <wire x1="52.578" y1="58.674" x2="52.578" y2="51.308" width="0.4064" layer="16"/>
 <wire x1="52.578" y1="51.308" x2="52.324" y2="51.054" width="0.4064" layer="16"/>
@@ -4563,14 +4589,14 @@ design rules under a new name.</description>
 <wire x1="35.814" y1="57.404" x2="44.196" y2="65.786" width="0.4064" layer="1"/>
 <wire x1="44.196" y1="65.786" x2="50.292" y2="65.786" width="0.4064" layer="1"/>
 <wire x1="50.292" y1="65.786" x2="50.8" y2="66.294" width="0.4064" layer="1"/>
-<wire x1="50.8" y1="66.294" x2="50.8" y2="68.58" width="0.4064" layer="1"/>
+<wire x1="50.8" y1="66.294" x2="50.546" y2="68.58" width="0.4064" layer="1"/>
 </signal>
 <signal name="SHIFT_POT">
 <contactref element="JP4" pad="1"/>
 <contactref element="J3" pad="1"/>
 <wire x1="33.02" y1="59.944" x2="34.544" y2="59.944" width="0.4064" layer="1"/>
 <wire x1="34.544" y1="59.944" x2="43.18" y2="68.58" width="0.4064" layer="1"/>
-<wire x1="43.18" y1="68.58" x2="48.26" y2="68.58" width="0.4064" layer="1"/>
+<wire x1="43.18" y1="68.58" x2="48.006" y2="68.58" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$2">
 </signal>
@@ -4691,6 +4717,10 @@ design rules under a new name.</description>
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
